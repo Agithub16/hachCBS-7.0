@@ -1,0 +1,42 @@
+# 1. First, go to your project directory
+cd "/home/aman/Desktop/HackCBS 7.0"
+
+# 2. Remove the existing project directory (if it exists)
+rm -rf ai-negotiation-assistant
+
+# 3. Create a new React app
+npx create-react-app ai-negotiation-assistant
+
+# 4. Go into the project directory
+cd ai-negotiation-assistant
+
+# 5. Install required dependencies
+npm install @mui/material @mui/icons-material @emotion/react @emotion/styled react-router-dom @reduxjs/toolkit react-redux
+
+# 6. Create the directory structure
+mkdir -p src/components/layout
+mkdir -p src/components/dashboard
+mkdir -p src/pages
+mkdir -p src/store/slices
+mkdir -p src/hooks
+mkdir -p src/assets
+
+# 7. Create all necessary files
+# Don't remove the existing public/index.html, just modify it
+
+# Create/update all the files
+touch src/theme.js
+touch src/components/layout/Layout.js
+touch src/components/layout/Header.js
+touch src/components/layout/Sidebar.js
+touch src/pages/Dashboard.js
+touch src/pages/TacticsLibrary.js
+touch src/pages/Simulation.js
+touch src/pages/Settings.js
+touch src/store/index.js
+touch src/store/slices/negotiationsSlice.js
+touch src/store/slices/userSlice.js
+touch src/store/slices/emotionAnalysisSlice.js
+
+# Start the development server
+npm start
